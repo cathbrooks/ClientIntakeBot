@@ -16,10 +16,10 @@ export function MessageBubble({
     >
       <div
         className={cn(
-          "max-w-[85%] rounded-lg px-4 py-2.5 whitespace-pre-wrap text-sm leading-relaxed",
+          "max-w-[80%] rounded-2xl px-4 py-3 text-sm leading-relaxed whitespace-pre-wrap",
           role === "user"
             ? "bg-primary text-primary-foreground"
-            : "bg-muted text-foreground",
+            : "bg-card border border-border text-foreground",
         )}
       >
         {children}

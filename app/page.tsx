@@ -10,7 +10,16 @@ import {
 export default function HomePage() {
   return (
     <main className="flex-1 flex items-center justify-center p-6">
-      <Card className="w-full max-w-md">
+      <div className="w-full max-w-md space-y-8">
+        <div className="text-center space-y-1">
+          <p className="font-mono text-xs tracking-[0.25em] uppercase text-primary">
+            Lightpier
+          </p>
+          <h1 className="text-xl font-semibold tracking-tight">
+            Discovery Session
+          </h1>
+        </div>
+      <Card className="w-full">
         <CardHeader>
           <CardTitle>Start a discovery session</CardTitle>
           <CardDescription className="space-y-2">
@@ -32,6 +41,7 @@ export default function HomePage() {
           <IntakeForm />
         </CardContent>
       </Card>
+      </div>
     </main>
   );
 }

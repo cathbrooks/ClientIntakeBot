@@ -20,18 +20,18 @@ export default async function SessionPage({
 
   return (
     <div className="flex-1 flex flex-col min-h-0">
-      <header className="border-b px-4 py-3 flex items-center justify-between gap-4">
+      <header className="border-b bg-card/50 backdrop-blur-sm px-4 py-3 flex items-center justify-between gap-4">
         <div>
-          <div className="text-sm font-medium leading-tight">
+          <div className="text-sm font-semibold leading-tight">
             {session.company_name}
           </div>
-          <div className="text-xs text-muted-foreground leading-tight">
+          <div className="font-mono text-xs text-muted-foreground leading-tight mt-0.5">
             {session.contact_name}
             {session.email ? ` · ${session.email}` : ""}
           </div>
         </div>
-        <div className="text-xs text-muted-foreground">
-          Industry: {session.industry}
+        <div className="font-mono text-xs text-primary/70 uppercase tracking-widest">
+          {session.industry}
         </div>
       </header>
 
